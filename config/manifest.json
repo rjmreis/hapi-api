@@ -1,0 +1,22 @@
+{
+	"connections": [{
+		"host": "localhost",
+		"port": 8000,
+		"labels": ["api"],
+		"routes": {
+			"cors": true
+		}
+	}],
+	"plugins": {
+		"hapi-auth-jwt2": [{ "select": "api" }],
+		"./auth": [{ "select": "api" }],
+		"./controllers": [{ "select": "api" }],
+		"./routes": [{ "select": "api" }],
+		"good": {
+			"opsInterval": 10000,
+			"reporters": [
+				{ "reporter": "good-console", "events": { "log": "*" } }
+			]
+		}
+	}
+}
