@@ -26,7 +26,7 @@ To provide a base guidance to structure a hapi project with server routes, jwt a
       routes.js      --> Sample routes test 
 
 ## Credits
-Big thanks to the guidance of the following projects.
+Big thanks for the guidance of the following projects.
 
 [hapi-plugins.com](https://github.com/hapijs-edge/hapi-plugins.com)
 
