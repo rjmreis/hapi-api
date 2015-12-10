@@ -10,6 +10,25 @@ To provide a base guidance to structure a hapi project with server routes, jwt a
 
 **Hapi** - [http://hapijs.com/](http://hapijs.com/)
 
+### Quick Start
+
+Clone project and install dependencies:
+```bash
+$ git clone https://github.com/rjmreis/hapi-api.git
+$ cd hapi-api
+$ npm install
+```
+
+Start the server:
+```bash
+$ npm start
+```
+
+Run tests:
+```bash
+$ npm test
+```
+
 ## Project Structure
 
 	server.js        --> Server definition (uses the Glue plugin to read a manifest)
