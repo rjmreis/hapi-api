@@ -59,19 +59,21 @@ https://github.com/hapijs/lab
 https://github.com/hapijs/code
 
 ## Project Structure
-
-	server.js        --> Server definition (uses the Glue plugin to read a manifest)
-    routes.js        --> REST routes
-    auth.js          --> Auth strategies
-    package.json
-    config/
-      manifest.js    --> Configuration manifest for server
-    controllers/
-      handlers/
-        home.js      --> Sample handler
-      index.js       --> Registers all the files inside the handlers folder
-    test/
-      routes.js      --> Sample routes test 
+```
+.
+├── server.js         * Server definition (uses the Glue plugin to read a manifest)
+├── routes.js         * REST routes
+├── auth.js           * Auth strategies
+├── package.json
+├── config/
+|   └── manifest.js   * Configuration manifest for server
+├── controllers/
+|   ├── handlers/
+|   |   └── home.js   * Sample handler
+|   └── index.js      * Registers all the files inside the handlers folder
+└── test/
+    └── routes.js     * Sample routes test
+```
 
 ## Credits
 Big thanks for the guidance of the following projects.
