@@ -1,8 +1,11 @@
 {
   "name": "hapi-api",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "Lean Hapi API Boilerplate",
+  "bugs": {
+    "url": "https://github.com/rjmreis/hapi-api/issues"
+  },
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/lab/bin/lab -v",
@@ -15,6 +18,9 @@
     "type": "git",
     "url": "https://github.com/rjmreis/hapi-api.git"
   },
+  "keywords": [
+    "hapi"
+  ],
   "dependencies": {
     "actin": "0.0.1",
     "glob": "^6.0.1",
