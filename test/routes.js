@@ -22,6 +22,28 @@ Glue.compose(manifest, { relativeTo: process.cwd() }, (err, server) => {
         done();
       });
     });
+    
+    lab.it('Restricted route should return http status 401 for anonymous user', done => {
+      server.inject('/restricted', response => {
+        Code.expect(response.statusCode).to.equal(401);
+        done();
+      });
+    });
+    
+    lab.it('Restricted route should return http status 200 for authenticated user', done => {
+      var options = {
+        method : 'GET',
+        url : '/restricted',
+        headers : {
+          'Authorization' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IkFudGhvbnkgVmFsaWQgVXNlciIsImlhdCI6MTQyNTQ3MzUzNX0.KA68l60mjiC8EXaC2odnjFwdIDxE__iDu5RwLdN1F2A',
+          'Content-Type' : 'application/json; charset=utf-8'
+        }
+      };
+      server.inject(options, response => {
+        Code.expect(response.statusCode).to.equal(200);
+        done();
+      });
+    });
 
     lab.it('Unknown route should return http status 404', done => {
       server.inject('/unkownroute', response => {

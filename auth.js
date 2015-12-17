@@ -5,13 +5,21 @@ exports.register = function (plugin, options, next) {
     verifyOptions: {
       algorithms: ['HS256']
     },
+    // Implement validation function
     validateFunc: (decoded, request, callback) => {
-      // Implement validation function
-      if (false) {
-        return callback(null, false);
+      // NOTE: This is purely for demonstration purposes!
+      var users = [
+        {
+          id: 1,
+          name: 'John Snow'
+        }
+      ];
+      
+      if (users.find(u => u.id === decoded.id)) {
+        return callback(null, true);
       }
       else {
-        return callback(null, true);
+        return callback(null, false);
       }
     }
   });

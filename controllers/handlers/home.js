@@ -7,7 +7,7 @@ module.exports.hello = {
 module.exports.restricted = {
   auth: 'jwt',
   handler: function (request, reply) {
-    return reply({ result: 'Restricted' });
+    return reply({ result: 'Restricted!' });
   }
 }
 
