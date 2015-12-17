@@ -11,7 +11,7 @@ exports.register = function (plugin, options, next) {
       var users = [
         {
           id: 1,
-          name: 'John Snow'
+          name: 'Jon Snow'
         }
       ];
       
