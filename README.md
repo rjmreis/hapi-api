@@ -10,9 +10,8 @@ To provide a base guidance to structure a hapi project with server routes, jwt a
 
 ## Core Stack
 
-**Node.js** - [http://nodejs.org/](http://nodejs.org/)
-
-**Hapi** - [http://hapijs.com/](http://hapijs.com/)
+- **Node.js** - [http://nodejs.org/](http://nodejs.org/)
+- **Hapi** - [http://hapijs.com/](http://hapijs.com/)
 
 ### Quick Start
 
@@ -35,31 +34,23 @@ $ npm test
 
 ### Plugins
 
-**glue** - Server composer for hapi.js.
+- **glue** - Server composer for hapi.js.
 https://github.com/hapijs/glue
-
-**glob** - Match files using the patterns the shell uses.
+- **glob** - Match files using the patterns the shell uses.
 https://github.com/isaacs/node-glob
-
-**hapi-auth-jwt2** - Secure Hapi.js authentication plugin using JSON Web Tokens (JWT) in Headers, Query or Cookies.
+- **hapi-auth-jwt2** - Secure Hapi.js authentication plugin using JSON Web Tokens (JWT) in Headers, Query or Cookies.
 https://github.com/dwyl/hapi-auth-jwt2
-
-**actin** - Auto loading controllers for hapi projects
+- **actin** - Auto loading controllers for hapi projects
 https://github.com/thegoleffect/actin
-
-**blipp** - Simple hapi plugin to display the routes table at startup.
+- **blipp** - Simple hapi plugin to display the routes table at startup.
 https://github.com/danielb2/blipp
-
-**good** - Hapi process monitor. It listens for events emitted by Hapi Server instances and allows custom reporters to be registered that output subscribed events.
+- **good** - Hapi process monitor. It listens for events emitted by Hapi Server instances and allows custom reporters to be registered that output subscribed events.
 https://github.com/hapijs/good
-
-**good-console** - Console reporting for Good process monitor.
+- **good-console** - Console reporting for Good process monitor.
 https://github.com/hapijs/good-console
-
-**lab** - Node test utility.
+- **lab** - Node test utility.
 https://github.com/hapijs/lab
-
-**code** - BDD assertion library.
+- **code** - BDD assertion library.
 https://github.com/hapijs/code
 
 ## Project Structure

@@ -23,10 +23,10 @@
   ],
   "dependencies": {
     "actin": "0.0.1",
-    "glob": "^6.0.1",
+    "glob": "^6.0.2",
     "glue": "^2.4.0",
-    "hapi": "^11.1.1",
-    "hapi-auth-jwt2": "^5.2.1"
+    "hapi": "^11.1.4",
+    "hapi-auth-jwt2": "^5.3.0"
   },
   "devDependencies": {
     "blipp": "^2.3.0",
