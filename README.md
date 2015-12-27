@@ -73,9 +73,8 @@ https://github.com/hapijs/code
 ## Credits
 Big thanks for the guidance of the following projects.
 
-[hapi-plugins.com](https://github.com/hapijs-edge/hapi-plugins.com)
-
-[hapi-ninja](https://github.com/poeticninja/hapi-ninja)
+- [hapi-plugins.com](https://github.com/hapijs-edge/hapi-plugins.com)
+- [hapi-ninja](https://github.com/poeticninja/hapi-ninja)
 
 ## License
 The MIT License (MIT)
