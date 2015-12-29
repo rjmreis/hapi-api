@@ -25,6 +25,7 @@ var load = (options, callback) => {
 };
 
 exports.register = (plugin, options, next) => {
+  plugin.dependency('auth');
 
   load({ path: __dirname + '/handlers' }, (err, handlers) => {
     if (err) {
