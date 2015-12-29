@@ -1,6 +1,6 @@
 {
   "name": "hapi-api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "description": "Lean Hapi API Boilerplate",
   "bugs": {
@@ -23,8 +23,8 @@
   ],
   "dependencies": {
     "actin": "0.0.1",
-    "glob": "^6.0.2",
-    "glue": "^2.4.0",
+    "glob": "^6.0.3",
+    "glue": "^3.0.0",
     "hapi": "^11.1.4",
     "hapi-auth-jwt2": "^5.3.0"
   },
@@ -33,6 +33,6 @@
     "code": "^2.0.1",
     "good": "^6.4.0",
     "good-console": "^5.2.0",
-    "lab": "^8.0.0"
+    "lab": "^8.0.1"
   }
 }
