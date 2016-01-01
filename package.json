@@ -1,6 +1,6 @@
 {
   "name": "hapi-api",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "Lean Hapi API Boilerplate",
   "bugs": {
@@ -22,11 +22,11 @@
     "hapi"
   ],
   "dependencies": {
-    "actin": "0.0.1",
     "glob": "^6.0.3",
     "glue": "^3.0.0",
     "hapi": "^11.1.4",
-    "hapi-auth-jwt2": "^5.3.0"
+    "hapi-auth-jwt2": "^5.3.0",
+    "plugo": "^0.2.1"
   },
   "devDependencies": {
     "blipp": "^2.3.0",

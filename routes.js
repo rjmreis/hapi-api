@@ -1,17 +1,14 @@
-const Actin = require('actin');
-
 exports.register = (plugin, options, next) => {
 
-  var AutoLoader = new Actin();
   plugin.dependency('controllers');
 
-  var Controllers = AutoLoader.controllersSync({ folderName: '/controllers/handlers' });
+  var handlers = plugin.plugins.controllers.handlers;
 
   plugin.route([
     // Application Routes
-    { method: 'GET', path: '/', config: Controllers.Home.hello },
-    { method: 'GET', path: '/restricted', config: Controllers.Home.restricted },
-    { method: 'GET', path: '/{path*}', config: Controllers.Home.notFound }
+    { method: 'GET', path: '/', config: handlers.Home.hello },
+    { method: 'GET', path: '/restricted', config: handlers.Home.restricted },
+    { method: 'GET', path: '/{path*}', config: handlers.Home.notFound }
   ]);
 
   next();
