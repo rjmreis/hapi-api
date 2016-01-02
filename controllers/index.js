@@ -3,7 +3,7 @@ const Plugo = require('plugo');
 exports.register = (plugin, options, next) => {
   plugin.dependency('auth');
 
-  Plugo.expose({ path: __dirname + '/handlers' }, 'handlers', plugin, next);
+  Plugo.expose({ name: 'handlers', path: __dirname + '/handlers' }, plugin, next);
 };
 
 exports.register.attributes = {
