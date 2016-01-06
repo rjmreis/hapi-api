@@ -40,7 +40,7 @@ https://github.com/hapijs/glue
 https://github.com/isaacs/node-glob
 - **hapi-auth-jwt2** - Secure Hapi.js authentication plugin using JSON Web Tokens (JWT) in Headers, Query or Cookies.
 https://github.com/dwyl/hapi-auth-jwt2
-- **plugo** - Dynamically expose hapi plugins from a given path
+- **plugo** - Dynamically expose modules to hapi plugins from a given path
 https://github.com/rjmreis/plugo
 - **blipp** - Simple hapi plugin to display the routes table at startup.
 https://github.com/danielb2/blipp
