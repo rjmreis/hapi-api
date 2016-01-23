@@ -9,7 +9,8 @@
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/lab/bin/lab -v",
-    "start": "node server.js"
+    "start": "node server.js",
+    "eslint": "eslint . --ext .js --ignore node_modules/**"
   },
   "author": "Ricardo Reis",
   "homepage": "https://github.com/rjmreis/hapi-api#readme",
@@ -23,17 +24,26 @@
   ],
   "dependencies": {
     "code": "^2.1.0",
-    "glob": "^6.0.3",
-    "glue": "^3.0.0",
-    "hapi": "^12.0.0",
-    "hapi-auth-jwt2": "^5.3.1",
+    "glob": "^6.0.4",
+    "glue": "^3.1.0",
+    "good-console": "^5.3.0",
+    "hapi": "^12.1.0",
+    "hapi-auth-jwt2": "^5.3.2",
+    "lab": "^8.2.0",
     "plugo": "^0.3.1"
   },
   "devDependencies": {
     "blipp": "^2.3.0",
     "code": "^2.0.1",
+    "eslint": "^1.10.3",
     "good": "^6.4.0",
     "good-console": "^5.2.0",
     "lab": "^8.0.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    }
   }
 }
