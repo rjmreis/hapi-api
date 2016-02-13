@@ -24,20 +24,20 @@
   ],
   "dependencies": {
     "code": "^2.1.0",
-    "glob": "^6.0.4",
-    "glue": "^3.1.0",
+    "glob": "^7.0.0",
+    "glue": "^3.2.0",
     "hapi": "^13.0.0",
-    "hapi-auth-jwt2": "^5.3.2",
+    "hapi-auth-jwt2": "^5.4.1",
     "lab": "^8.2.0",
     "plugo": "^0.3.2"
   },
   "devDependencies": {
     "blipp": "^2.3.0",
-    "code": "^2.0.1",
-    "eslint": "^1.10.3",
-    "good": "^6.5.0",
+    "code": "^2.1.0",
+    "eslint": "^2.0.0",
+    "good": "^6.6.0",
     "good-console": "^5.3.1",
-    "lab": "^8.0.1"
+    "lab": "^8.2.0"
   },
   "eslintConfig": {
     "env": {
