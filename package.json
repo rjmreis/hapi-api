@@ -1,6 +1,6 @@
 {
   "name": "hapi-api",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "description": "Lean Hapi API Boilerplate",
   "bugs": {
@@ -23,21 +23,19 @@
     "hapi"
   ],
   "dependencies": {
-    "code": "^2.1.0",
     "glob": "^7.0.0",
     "glue": "^3.2.0",
     "hapi": "^13.0.0",
     "hapi-auth-jwt2": "^5.4.1",
-    "lab": "^8.2.0",
-    "plugo": "^0.3.4"
+    "plugo": "^0.3.5"
   },
   "devDependencies": {
     "blipp": "^2.3.0",
     "code": "^2.1.0",
-    "eslint": "^2.0.0",
+    "eslint": "^2.2.0",
     "good": "^6.6.0",
     "good-console": "^5.3.1",
-    "lab": "^8.2.0"
+    "lab": "^9.0.0"
   },
   "eslintConfig": {
     "env": {
