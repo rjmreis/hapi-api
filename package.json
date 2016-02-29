@@ -35,7 +35,7 @@
     "eslint": "^2.2.0",
     "good": "^6.6.0",
     "good-console": "^5.3.1",
-    "lab": "^9.0.0"
+    "lab": "^10.1.0"
   },
   "eslintConfig": {
     "env": {
