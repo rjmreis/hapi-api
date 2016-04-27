@@ -23,19 +23,19 @@
     "hapi"
   ],
   "dependencies": {
-    "glob": "^7.0.0",
+    "glob": "^7.0.3",
     "glue": "^3.2.0",
-    "hapi": "^13.0.0",
-    "hapi-auth-jwt2": "^5.4.1",
+    "hapi": "^13.3.0",
+    "hapi-auth-jwt2": "^5.8.0",
     "plugo": "^0.3.6"
   },
   "devDependencies": {
     "blipp": "^2.3.0",
-    "code": "^2.1.0",
-    "eslint": "^2.2.0",
-    "good": "^6.6.0",
-    "good-console": "^5.3.1",
-    "lab": "^10.1.0"
+    "code": "^2.2.1",
+    "eslint": "^2.8.0",
+    "good": "^6.6.3",
+    "good-console": "^5.3.2",
+    "lab": "^10.3.2"
   },
   "eslintConfig": {
     "env": {
