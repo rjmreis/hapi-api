@@ -3,49 +3,39 @@
     {
       "host": "localhost",
       "port": 8000,
-      "labels": [
-        "api"
-      ],
       "routes": {
         "cors": true
+      },
+      "router": {
+        "stripTrailingSlash": true
       }
     }
   ],
   "registrations": [
     {
-      "plugin": "hapi-auth-jwt2",
-      "options": {
-        "select": "api"
-      }
+      "plugin": "hapi-auth-jwt2"
     },
     {
-      "plugin": "./auth",
-      "options": {
-        "select": "api"
-      }
+      "plugin": "./auth"
     },
     {
-      "plugin": "./controllers",
+      "plugin": "./api",
       "options": {
-        "select": "api"
-      }
-    },
-    {
-      "plugin": "./routes",
-      "options": {
-        "select": "api"
+        "routes": {
+          "prefix": "/api"
+        }
       }
     },
     {
       "plugin": {
         "register": "good",
         "options": {
-          "opsInterval": 10000,
+          "opsInterval": 60000,
           "reporters": [
             {
               "reporter": "good-console",
               "events": {
-                "log": "*"
+                "response": "*"
               }
             }
           ]

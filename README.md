@@ -40,8 +40,6 @@ https://github.com/hapijs/glue
 https://github.com/isaacs/node-glob
 - **hapi-auth-jwt2** - Secure Hapi.js authentication plugin using JSON Web Tokens (JWT) in Headers, Query or Cookies.
 https://github.com/dwyl/hapi-auth-jwt2
-- **plugo** - Dynamically expose modules to hapi plugins from a given path
-https://github.com/rjmreis/plugo
 - **blipp** - Simple hapi plugin to display the routes table at startup.
 https://github.com/danielb2/blipp
 - **good** - Hapi process monitor. It listens for events emitted by Hapi Server instances and allows custom reporters to be registered that output subscribed events.
@@ -57,17 +55,16 @@ https://github.com/hapijs/code
 ```
 .
 ├── server.js         * Server definition (uses the Glue plugin to read a manifest)
-├── routes.js         * REST routes
 ├── auth.js           * Auth strategies
 ├── package.json
 ├── config/
-|   └── manifest.js   * Configuration manifest for server
-├── controllers/
+|   └── manifest.js   * Server configuration
+├── api/
 |   ├── handlers/
 |   |   └── home.js   * Sample handler
-|   └── index.js      * Registers all the files inside the handlers folder
+|   └── index.js      * REST routes
 └── test/
-    └── routes.js     * Sample routes test
+    └── api.js        * API test
 ```
 
 ## Credits
