@@ -36,8 +36,6 @@ $ npm test
 
 - **glue** - Server composer for hapi.js.
 https://github.com/hapijs/glue
-- **glob** - Match files using the patterns the shell uses.
-https://github.com/isaacs/node-glob
 - **hapi-auth-jwt2** - Secure Hapi.js authentication plugin using JSON Web Tokens (JWT) in Headers, Query or Cookies.
 https://github.com/dwyl/hapi-auth-jwt2
 - **blipp** - Simple hapi plugin to display the routes table at startup.

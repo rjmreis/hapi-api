@@ -30,15 +30,24 @@
       "plugin": {
         "register": "good",
         "options": {
-          "opsInterval": 60000,
-          "reporters": [
-            {
-              "reporter": "good-console",
-              "events": {
-                "response": "*"
-              }
-            }
-          ]
+          "ops": {
+            "interval": 60000
+          },
+          "reporters": {
+            "console": [
+              {
+                "module": "good-console",
+                "args": [
+                  {
+                    "events": {
+                      "response": "*"
+                    }
+                  }
+                ]
+              },
+              "stdout"
+            ]
+          }
         }
       }
     }

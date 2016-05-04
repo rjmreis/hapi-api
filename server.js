@@ -11,11 +11,6 @@ if (!process.env.PRODUCTION) {
       "options": {}
     }
   });
-
-  let good = manifest.registrations.find(p => p.plugin.register === 'good');
-  if (good) {
-    good.plugin.options.reporters[0].events['ops'] = '*';
-  }
 }
 
 Glue.compose(manifest, { relativeTo: __dirname }, (err, server) => {
