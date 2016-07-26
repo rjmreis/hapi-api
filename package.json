@@ -23,17 +23,17 @@
     "hapi"
   ],
   "dependencies": {
-    "glue": "^3.2.1",
-    "hapi": "^13.4.1",
+    "glue": "^3.3.0",
+    "hapi": "^13.5.0",
     "hapi-auth-jwt2": "^7.0.1",
     "good": "^7.0.1",
     "good-console": "^6.1.2"
   },
   "devDependencies": {
     "blipp": "^2.3.0",
-    "code": "^3.0.0",
-    "eslint": "^2.11.1",
-    "lab": "^10.7.1"
+    "code": "^3.0.1",
+    "eslint": "^3.1.1",
+    "lab": "^10.9.0"
   },
   "eslintConfig": {
     "env": {
