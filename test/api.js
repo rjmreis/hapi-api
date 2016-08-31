@@ -1,4 +1,4 @@
-const Glue = require('Glue');
+const Glue = require('glue');
 const manifest = require('../config/manifest.json');
 
 const Code = require('code');
