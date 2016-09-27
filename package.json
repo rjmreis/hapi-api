@@ -1,6 +1,6 @@
 {
   "name": "hapi-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "description": "Lean Hapi API Boilerplate",
   "bugs": {
@@ -9,8 +9,9 @@
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/lab/bin/lab -v",
-    "start": "node server.js",
-    "lint": "eslint . --ext .js --ignore node_modules/**"
+    "start": "npm-run-all --parallel lint start:server",
+    "start:server": "nodemon server.js",
+    "lint": "eslint . --ext .js"
   },
   "author": "Ricardo Reis",
   "homepage": "https://github.com/rjmreis/hapi-api#readme",
@@ -20,7 +21,8 @@
     "url": "https://github.com/rjmreis/hapi-api.git"
   },
   "keywords": [
-    "hapi"
+    "hapi",
+    "boilerplate"
   ],
   "dependencies": {
     "glue": "^4.0.0",
@@ -33,7 +35,11 @@
     "blipp": "^2.3.0",
     "code": "^3.0.2",
     "eslint": "^3.4.0",
-    "lab": "^11.0.1"
+    "eslint-plugin-import": "^1.16.0",
+    "good-squeeze": "^5.0.0",
+    "lab": "^11.0.1",
+    "nodemon": "^1.10.2",
+    "npm-run-all": "^3.1.0"
   },
   "eslintConfig": {
     "env": {

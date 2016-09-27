@@ -9,7 +9,7 @@ module.exports.restricted = {
   handler: function (request, reply) {
     return reply({ result: 'Restricted!' });
   }
-}
+};
 
 module.exports.notFound = {
   handler: function (request, reply) {

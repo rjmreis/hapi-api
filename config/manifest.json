@@ -36,14 +36,16 @@
           "reporters": {
             "console": [
               {
-                "module": "good-console",
+                "module": "good-squeeze",
+                "name": "Squeeze",
                 "args": [
                   {
-                    "events": {
-                      "response": "*"
-                    }
+                    "error": "*"
                   }
                 ]
+              },
+              {
+                "module": "good-console"
               },
               "stdout"
             ]

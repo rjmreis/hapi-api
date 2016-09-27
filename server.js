@@ -1,7 +1,6 @@
 'use strict';
 
 const Glue = require('glue');
-const Hapi = require('hapi');
 const manifest = require('./config/manifest.json');
 
 if (!process.env.PRODUCTION) {
