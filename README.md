@@ -13,7 +13,7 @@ To provide a base guidance to structure a hapi project with server routes, jwt a
 - **Node.js** - [http://nodejs.org/](http://nodejs.org/)
 - **Hapi** - [http://hapijs.com/](http://hapijs.com/)
 
-### Quick Start
+## Quick Start
 
 Clone project and install dependencies:
 ```bash
@@ -32,7 +32,7 @@ Run tests:
 $ npm test
 ```
 
-### Plugins
+## Plugins
 
 - **glue** - Server composer for hapi.js.
 https://github.com/hapijs/glue
@@ -44,10 +44,20 @@ https://github.com/danielb2/blipp
 https://github.com/hapijs/good
 - **good-console** - Console reporting for Good process monitor.
 https://github.com/hapijs/good-console
+- **good-squeeze** - Simple transform stream for event filtering with good.
+https://github.com/hapijs/good-squeeze
 - **lab** - Node test utility.
 https://github.com/hapijs/lab
 - **code** - BDD assertion library.
 https://github.com/hapijs/code
+- **nodemon** - Monitor for any changes in your node.js application and automatically restart the server.
+https://github.com/remy/nodemon
+- **eslint** - A fully pluggable tool for identifying and reporting on patterns in JavaScript.
+https://github.com/eslint/eslint
+- **eslint-plugin-import** - ESLint plugin with rules that help validate proper imports.
+https://github.com/benmosher/eslint-plugin-import
+- **npm-run-all** - A CLI tool to run multiple npm-scripts in parallel or sequential.
+https://github.com/mysticatea/npm-run-all
 
 ## Project Structure
 ```
@@ -64,12 +74,6 @@ https://github.com/hapijs/code
 └── test/
     └── api.js        * API test
 ```
-
-## Credits
-Big thanks for the guidance of the following projects.
-
-- [hapi-plugins.com](https://github.com/hapijs-edge/hapi-plugins.com)
-- [hapi-ninja](https://github.com/poeticninja/hapi-ninja)
 
 ## License
 The MIT License (MIT)
