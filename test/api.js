@@ -1,5 +1,9 @@
-const Glue = require('glue');
-const manifest = require('../config/manifest.json');
+'use strict';
+
+const Hapi = require('hapi');
+const jwtPlugin = require('hapi-auth-jwt2');
+const authPlugin = require('../auth');
+const apiPlugin = require('../api');
 
 const Code = require('code');
 const Lab = require('lab');
@@ -11,27 +15,33 @@ const before = lab.before;
 const expect = Code.expect;
 
 describe('API', () => {
-  var server;
+  let server;
 
   before((done) => {
 
-    Glue.compose(manifest, { relativeTo: process.cwd() }, (err, hapi) => {
-      server = hapi;
-      server.start(() => { });
+    const plugins = [jwtPlugin, authPlugin, apiPlugin];
+    server = new Hapi.Server();
+    server.connection({ port: 8000 });
+    server.register(plugins, (err) => {
+
+      if (err) {
+        return done(err);
+      }
+
+      server.initialize(done);
     });
-    done();
 
   });
 
   it('Known route should return http status 200', done => {
-    server.inject('/api', response => {
+    server.inject('/', response => {
       expect(response.statusCode).to.equal(200);
       done();
     });
   });
 
   it('Restricted route should return http status 401 for anonymous user', done => {
-    server.inject('/api/restricted', response => {
+    server.inject('/restricted', response => {
       expect(response.statusCode).to.equal(401);
       done();
     });
@@ -40,7 +50,7 @@ describe('API', () => {
   it('Restricted route should return http status 200 for authenticated user', done => {
     var options = {
       method: 'GET',
-      url: '/api/restricted',
+      url: '/restricted',
       headers: {
         'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IkFudGhvbnkgVmFsaWQgVXNlciIsImlhdCI6MTQyNTQ3MzUzNX0.KA68l60mjiC8EXaC2odnjFwdIDxE__iDu5RwLdN1F2A',
         'Content-Type': 'application/json; charset=utf-8'
@@ -53,7 +63,7 @@ describe('API', () => {
   });
 
   it('Unknown route should return http status 404', done => {
-    server.inject('/api/unkownroute', response => {
+    server.inject('/unkownroute', response => {
       expect(response.statusCode).to.equal(404);
       done();
     });
