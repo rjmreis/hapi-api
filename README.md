@@ -24,7 +24,7 @@ $ npm install
 
 Start the server:
 ```bash
-$ npm start
+$ npm start -s
 ```
 
 Run tests:
@@ -62,17 +62,18 @@ https://github.com/mysticatea/npm-run-all
 ## Project Structure
 ```
 .
-├── server.js         * Server definition (uses the Glue plugin to read a manifest)
-├── auth.js           * Auth strategies
-├── package.json
-├── config/
-|   └── manifest.js   * Server configuration
 ├── api/
 |   ├── handlers/
 |   |   └── home.js   * Sample handler
 |   └── index.js      * REST routes
-└── test/
-    └── api.js        * API test
+├── config/
+|   ├── manifest.js   * Server configuration
+|   └── secret.js     * Secret key
+├── test/
+|   └── api.js        * API test
+├── server.js         * Server definition (uses the Glue plugin to read a manifest)
+├── auth.js           * Auth strategies
+└── package.json
 ```
 
 ## License

@@ -1,7 +1,9 @@
+const SECRET_KEY = require('./config/secret');
+
 exports.register = function (plugin, options, next) {
 
   plugin.auth.strategy('jwt', 'jwt', {
-    key: 'NeverShareYourSecret', // Secret key
+    key: SECRET_KEY,
     verifyOptions: {
       algorithms: ['HS256']
     },
@@ -14,7 +16,7 @@ exports.register = function (plugin, options, next) {
           name: 'Jon Snow'
         }
       ];
-      
+
       if (users.find(u => u.id === decoded.id)) {
         return callback(null, true);
       }
