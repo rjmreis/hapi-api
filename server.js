@@ -1,7 +1,7 @@
 'use strict';
 
 const Glue = require('glue');
-const manifest = require('./config/manifest.json');
+const manifest = require('./config/manifest');
 
 if (!process.env.PRODUCTION) {
   manifest.registrations.push({
