@@ -1,6 +1,5 @@
 [![Build Status](https://secure.travis-ci.org/rjmreis/hapi-api.svg)](http://travis-ci.org/rjmreis/hapi-api)
 [![Dependencies Status](https://david-dm.org/rjmreis/hapi-api.svg)](https://david-dm.org/rjmreis/hapi-api)
-[![DevDependencies Status](https://david-dm.org/rjmreis/hapi-api/dev-status.svg)](https://david-dm.org/rjmreis/hapi-api#info=devDependencies)
 
 # hapi-api
 Lean hapi API Boilerplate with an opinionated view on project structure.
