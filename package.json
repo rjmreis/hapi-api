@@ -41,10 +41,7 @@
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2"
   },
-  "eslintConfig": {
-    "env": {
-      "node": true,
-      "es6": true
-    }
+  "engines": {
+    "node": ">=4.0.0"
   }
 }
