@@ -1,5 +1,3 @@
-[![Build Status](https://secure.travis-ci.org/rjmreis/hapi-api.svg)](http://travis-ci.org/rjmreis/hapi-api)
-
 # hapi-api
 Lean hapi API Boilerplate with an opinionated view on project structure.
 
